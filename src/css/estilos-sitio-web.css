@@ -83,10 +83,11 @@ body {
       cursor: pointer;/*ACTIVACIÓN DE CURSOR AL SOBREPONER EL MOUSE SOBRE EL HIPERVINCULO.*/
     }
     
+	/*ICONO CARRITO DE COMPRAS:*/
     .icono-carrito-compras {
 	  width: 50px;/*Anchura.*/
       height: 50px;/*Altura.*/
-      background-image:url(../imagenes/icono-carrito_compras-01.png);/*Ruta del logo del sitio web.*/
+      background-image:url(../imagenes/icono-carrito_compras-01.png);/*Ruta del icono del carrito de compras.*/
       background-size:100% 100%;/*Tamaño de expansión de la imagen de fondo tanto en altura y ancho al 100%.*/
       background-position:center;/*Centralizacion de la imagen de fondo.*/
       background-repeat:no-repeat;/*Propiedad para que no se repita la imagen de fondo.*/
@@ -100,11 +101,39 @@ body {
   }
 }
 
-/* ----- PIE DE PÁGINA ----- */
-.pie-pagina {/*Clase creada para el pie de página.*/
-  background-color: #1E73BE;/*Color del fondo.*/
-  color: white;/*Color del texto.*/
-  text-align: center;/*Alineación del texto.*/
-  padding: 15px;/*Borde del pie de página (arriba).*/
-  font-size: 0.9em;/*Tamaño del texto.*/
+/* ----- RECOMENDACIONES Y COMUNIDAD DE LECTORES: ----- */
+.tabla-recomendaciones-comunidad-lectores {
+  background-color: #FFFFFF;/*Color del fondo.*/
+  
+  .icono-recomendaciones-personalizadas {
+    width: 100%;/*Anchura.*/
+    height: 130px;/*Altura.*/
+    background-image:url(../imagenes/icono-recomendaciones-personalizadas.jpg);/*Ruta del icono de las recomendaciones personalizadas.*/
+    background-size:100% 100%;/*Tamaño de expansión de la imagen de fondo tanto en altura y ancho al 100%.*/
+    background-position:center;/*Centralizacion de la imagen de fondo.*/
+    background-repeat:no-repeat;/*Propiedad para que no se repita la imagen de fondo.*/
+    border-radius: 0;/*Nivel de borde redondeado.*/
+  }
+  .icono-comunidad-lectores {
+    width: 100%;/*Anchura.*/
+    height: 130px;/*Altura.*/
+    background-image:url(../imagenes/icono-comunidad-lectores.jpg);/*Ruta del icono de la comunidad de lectores.*/
+    background-size:100% 100%;/*Tamaño de expansión de la imagen de fondo tanto en altura y ancho al 100%.*/
+    background-position:center;/*Centralizacion de la imagen de fondo.*/
+    background-repeat:no-repeat;/*Propiedad para que no se repita la imagen de fondo.*/
+    border-radius: 0;/*Nivel de borde redondeado.*/
+  }
+}
+
+/* ----- PIE DE PÁGINA: ----- */
+.tabla-footer {/*Clase creada para el pie de página.*/
+  background-color: transparent;/*Color del fondo.*/
+  
+  /*TITULO DEL PIE DE PÁGINA.*/
+  .titulo-footer {
+    color: #000000;/*Color del texto.*/
+    text-align: center;/*Alineación del texto.*/
+    padding: 15px;/*Borde del pie de página (arriba).*/
+    font-size: 0.9em;/*Tamaño del texto.*/
+  }
 }
