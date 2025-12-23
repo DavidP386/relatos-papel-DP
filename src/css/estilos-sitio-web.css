@@ -108,7 +108,7 @@ body {
   /*ICONO RECOMENDACIONES PERSONALIZADAS:*/
   .icono-recomendaciones-personalizadas {
     width: 100%;/*Anchura.*/
-    height: 130px;/*Altura.*/
+    height: 200px;/*Altura.*/
     background-image:url(../imagenes/icono-recomendaciones-personalizadas.jpg);/*Ruta del icono de las recomendaciones personalizadas.*/
     background-size:100% 100%;/*Tamaño de expansión de la imagen de fondo tanto en altura y ancho al 100%.*/
     background-position:center;/*Centralizacion de la imagen de fondo.*/
@@ -118,7 +118,7 @@ body {
   /*ICONO COMUNIDAD DE LECTORES:*/
   .icono-comunidad-lectores {
     width: 100%;/*Anchura.*/
-    height: 130px;/*Altura.*/
+    height: 200px;/*Altura.*/
     background-image:url(../imagenes/icono-comunidad-lectores.jpg);/*Ruta del icono de la comunidad de lectores.*/
     background-size:100% 100%;/*Tamaño de expansión de la imagen de fondo tanto en altura y ancho al 100%.*/
     background-position:center;/*Centralizacion de la imagen de fondo.*/
@@ -129,18 +129,18 @@ body {
 
 /* ----- CATEGORIAS Y ROTADORES: ----- */
 .tabla-categorias-rotadores {
-  background-color: #FFFFFF;/*Color del fondo.*/
+  background-color: #A1B7AF;/*Color del fondo.*/
   
   /*AREA DE CATEGORIAS Y ROTADORES:*/
   .area-categorias-rotadores {
     width: 100%;/*Anchura.*/
-    height: 300px;/*Altura.*/
+    height: 400px;/*Altura.*/
   }
 }
 
 /* ----- LISTADO DE REGISTROS: ----- */
 .tabla-listado {
-  background-color: #FFFFFF;/*Color del fondo.*/
+  background-color: #A1B7AF;/*Color del fondo.*/
   
   /*AREA DE BUSCADOR:*/
   .area-buscador {
@@ -153,7 +153,7 @@ body {
   .area-listado {
     width: 100%;/*Anchura.*/
     height: 300px;/*Altura.*/
-    background-color: #FFFFFF;/*Color del fondo.*/
+    background-color: #A1B7AF;/*Color del fondo.*/
     color: #000000;/*Color del texto.*/
   }
 }
