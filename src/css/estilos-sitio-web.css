@@ -129,15 +129,79 @@ body {
 
 /* ----- CATEGORIAS Y ROTADORES: ----- */
 .tabla-categorias-rotadores {
-  background-color: #A1B7AF;/*Color del fondo.*/
-  
-  /*AREA DE CATEGORIAS Y ROTADORES:*/
-  .area-categorias-rotadores {
-    width: 100%;/*Anchura.*/
-    height: 400px;/*Altura.*/
-  }
+  background-color: #A1B7AF; /*Color del fondo.*/
+  padding: 20px 0;
 }
 
+/* CONTENEDOR PRINCIPAL DEL CARRUSEL */
+.tabla-categorias-rotadores .area-categorias-rotadores {
+  position: relative;
+  width: 90%;              /* 🔑 limita el ancho */
+  max-width: 1800px;       /* 🔑 evita expansión */
+  margin: 0 auto;          /* centra el carrusel */
+  overflow: hidden;        /* 🔑 recorta exceso */
+  padding: 10px 60px;      /* espacio para flechas */
+  box-sizing: border-box;
+}
+
+/* VIEWPORT (ZONA VISIBLE) */
+.tabla-categorias-rotadores .rotador-viewport {
+  width: 100%;
+  overflow-x: hidden;      /* 🔑 NO auto */
+}
+
+/* TRACK INTERNO (SE DESPLAZA) */
+.tabla-categorias-rotadores .rotador-libros {
+  display: flex;
+  gap: 15px;
+  width: max-content;      /* 🔑 crece solo internamente */
+  padding: 10px 0;
+}
+
+/* IMÁGENES */
+.tabla-categorias-rotadores .rotador-libros img {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tabla-categorias-rotadores .rotador-libros img:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* FLECHAS */
+.tabla-categorias-rotadores .btn-rotador {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.tabla-categorias-rotadores .btn-rotador:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.tabla-categorias-rotadores .btn-izq {
+  left: 10px;
+}
+
+.tabla-categorias-rotadores .btn-der {
+  right: 10px;
+}
 /* ----- LISTADO DE REGISTROS: ----- */
 .tabla-listado {
   background-color: #A1B7AF;/*Color del fondo.*/
