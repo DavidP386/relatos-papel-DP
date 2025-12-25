@@ -1,4 +1,5 @@
-import React, { PureComponent } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { BookCard } from './BookCard';
@@ -10,6 +11,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export const Carrousel = () => {
+
+  const [clickedBook, setClickedBook] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (clickedBook !== null) {
+      navigate(`/book/${clickedBook}`);
+    }
+  }, [clickedBook, navigate]);
+
   return (
     <div className="container-fluid text-dark py-5 min-vh-100">
       {Categories.map((cat) => (
@@ -26,10 +37,10 @@ export const Carrousel = () => {
               1024: { slidesPerView: 10 },
               1440: { slidesPerView: 12 },
             }}
-            className="px-4 py-3 carrousel back-gray"
+            className="px-4 py-3 rounded-border back-gray"
           >
             {Books.filter(book => book.id_category === cat.id_category).map((book, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide onClick={() => setClickedBook(book.id_book)} key={index}>
                 <BookCard book={book} />
               </SwiperSlide>
             ))}

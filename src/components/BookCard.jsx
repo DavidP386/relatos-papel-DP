@@ -1,6 +1,9 @@
-import React, { PureComponent } from 'react';
+import { useState } from 'react';
 
-export const BookCard = ({book}) => {
+export const BookCard = ({ book }) => {
+
+  
+
   return (
     <div className="card h-100 border-0 bg-transparent text-light">
       <img
@@ -11,7 +14,7 @@ export const BookCard = ({book}) => {
       />
       <div className="card-body px-0 py-2">
         <h6 className="card-title text-dark mb-0 text-truncate" title={book.title}>{book.title}</h6>
-        <p className="card-text small text-secondary">{book.autor}</p>
+        <p className="card-text small text-secondary">{book.author}</p>
       </div>
     </div>
   );

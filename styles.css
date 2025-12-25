@@ -21,6 +21,7 @@ footer {
   margin-top: 2rem;
   text-align: center;
   font-size: medium;
+  border-top: black 2px solid;
 }
 
 /*Estilos para la barra del home*/
@@ -46,6 +47,11 @@ footer {
   background-color: var(--third-color);
 }
 
+/* Borde redondeado */
+.rounded-border {
+  border-radius: 10px;
+}
+
 /*Estilo para los campos de formularios*/
 .field {
   font-size: 12px;
@@ -66,9 +72,6 @@ footer {
 /* Contenedor principal de las flechas */
 
 /*Estilo para el dondo más claro del carrusel */
-.carrousel {
-  border-radius: 10px;
-}
 
 /*Estilo para el swiper del carrusel */
 .swiper-button-next,
