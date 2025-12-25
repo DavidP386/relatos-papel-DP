@@ -1,16 +1,23 @@
-# React + Vite
+# Relatos de papel 📖✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Relatos de Papel es una plataforma de transformación digital diseñada para adaptar el consumo literario tradicional a las nuevas realidades del mercado mediante una aplicación web robusta y escalable. El proyecto permite a los usuarios explorar un vasto catálogo de libros, gestionar compras de productos físicos y digitales, y participar en una comunidad activa de lectores.
 
-Currently, two official plugins are available:
+# Características Principales 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Búsqueda Avanzada: Motor robusto que permite encontrar libros por título, autor, género o palabras clave, con filtros por precio, popularidad y fecha.
+- Gestión de Carrito e Inventario: Proceso de compra intuitivo con validación de cupones y control de stock en tiempo real para evitar sobreventas.
+- Productos Híbridos: Venta tanto de libros físicos como de recursos digitales con acceso instantáneo tras la compra.
+- Comunidad y Reseñas: Sistema de participación donde los usuarios pueden publicar reseñas moderadas de los productos adquiridos.
+- Seguimiento y Soporte: Historial de pedidos detallado con rastreo de envíos en tiempo real y sistema integrado para reportar incidencias.
 
-## React Compiler
+# Arquitectura del Sistema 🏗️
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto está diseñado bajo una arquitectura de **microservicios**, lo que permite una alta escalabilidad para soportar hasta **10,000 usuarios concurrentes**[cite: 48].
 
-## Expanding the ESLint configuration
+- **Frontend:** Desarrollado con **React + Vite**, enfocado en una interfaz intuitiva, limpia y accesible.
+- **Backend:** Construido con **Java 17+** y **Spring Boot**, utilizando el ecosistema de **Spring Cloud** para la gestión de servicios.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Configuración del Proyecto 📦
+
+- Bajarse el proyecto del repositorio asignado de GitHub
+- Instalar los módulos con `npm install`
