@@ -1,3 +1,4 @@
+/*Colores base de la aplicación*/
 :root {
   --primary-color: #A1B7AF;
   --secundary-color: #80B6D8;
@@ -5,6 +6,7 @@
   --back-color: #212425;
 }
 
+/*Parametrización de estilos del body*/
 body{
   margin: 0;
   color: white;
@@ -12,6 +14,7 @@ body{
   background-color: var(--primary-color);
 }
 
+/*Parametrización de estilos del footer*/
 footer {
   background-color: var(--back-color);
   padding: 1rem 0;
@@ -19,6 +22,7 @@ footer {
   text-align: center;
   font-size: medium;
 }
+
 /*Estilos para la barra del home*/
 .barra {
   height: 5rem;
@@ -28,9 +32,12 @@ footer {
   font-weight: bold;
 }
 
+/*Estilos para el acceso directo a la sección de recomendaciones*/
 .recomendaciones {
   background-color: black;
 }
+
+/*Estilos para el acceso directo a la comunidad*/
 .comunidad {
   background-color: var(--secundary-color);
 }
@@ -38,6 +45,14 @@ footer {
 /*Estilos para el carrusel*/
 /* Color de las flechas */
 /* Contenedor principal de las flechas */
+
+/*Estilo para el dondo más claro del carrusel */
+.carrousel {
+  background-color: var(--third-color);
+  border-radius: 5px;
+}
+
+/*Estilo para el swiper del carrusel */
 .swiper-button-next, .swiper-button-prev {
   color: #ffffff !important; /* Blanco puro */
   background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */

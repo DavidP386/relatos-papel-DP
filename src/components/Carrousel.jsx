@@ -26,7 +26,7 @@ export const Carrousel = () => {
               1024: { slidesPerView: 8 },
               1440: { slidesPerView: 10 },
             }}
-            className="px-4"
+            className="px-4 py-3 carrousel"
           >
             {Books.filter(book => book.id_category === cat.id_category).map((book, index) => (
               <SwiperSlide key={index}>
