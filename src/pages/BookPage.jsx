@@ -25,29 +25,30 @@ export const BookPage = () => {
           <p className='mt-2'>
             { book.synopsis }
           </p>
+          {/* Campos para la compra */}
           <div className='row container-fluid'>
-            <div className='col-3 text-end'>
+            <div className='col-lg-3 text-end'>
             <label htmlFor="id_modalidad">Modalidad:</label>
             </div>
-            <div className="col-3">
+            <div className="col-lg-3">
               <select className='field form-select' name="id_modalidad" id="id_modalidad">
                 <option selected>Escoja</option>
                 <option value="F">Físico</option>
                 <option value="D">Digital</option>
               </select>
             </div>
-            <div className="col-3 text-end">
+            <div className="col-lg-3 text-end">
               <label htmlFor="cantidad">Cantidad:</label>
             </div>
-            <div className="col-3">
+            <div className="col-lg-3">
               <input type="number" className='field form-control text-end' name="cantidad" id="cantidad" value="1" />
             </div>
           </div>
           <div className='row container-fluid align-items-center mt-2'>
-            <div className="col-6 text-end fw-bold">
+            <div className="col-lg-6 text-end fw-bold">
               <label>${book.price}</label>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6">
               <button type="button" className='button-blue'>
                 <i className="bi bi-cart-fill p-2"></i>
                 Añadir al carrito

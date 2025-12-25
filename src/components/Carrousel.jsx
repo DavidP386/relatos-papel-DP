@@ -31,7 +31,7 @@ export const Carrousel = () => {
             modules={[Navigation]}
             navigation
             spaceBetween={10}
-            slidesPerView={4} // Móvil
+            slidesPerView={3} // Móvil
             breakpoints={{
               640: { slidesPerView: 6 },
               1024: { slidesPerView: 10 },
