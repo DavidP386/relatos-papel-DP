@@ -204,6 +204,8 @@ export const Books = [
     title: "Hábitos atómicos",
     author:  "James Clear",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523375-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -212,6 +214,8 @@ export const Books = [
     title: "El poder del ahora",
     author:  "Eckhart Tolle",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958365-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -220,6 +224,8 @@ export const Books = [
     title: "Los 7 hábitos",
     author:  "Stephen Covey",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958340-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -228,6 +234,8 @@ export const Books = [
     title: "Los cuatro acuerdos",
     author:  "Don Miguel Ruiz",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523320-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -236,6 +244,8 @@ export const Books = [
     title: "El monje que vendió su Ferrari",
     author:  "Robin Sharma",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523389-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -244,6 +254,8 @@ export const Books = [
     title: "Piense y hágase rico",
     author:  "Napoleon Hill",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523360-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -252,6 +264,8 @@ export const Books = [
     title: "Inteligencia emocional",
     author:  "Daniel Goleman",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958361-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -260,6 +274,8 @@ export const Books = [
     title: "El club de las 5 AM",
     author:  "Robin Sharma",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958391-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -268,6 +284,8 @@ export const Books = [
     title: "Cómo hacer amigos",
     author:  "Dale Carnegie",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958314-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -276,6 +294,8 @@ export const Books = [
     title: "El secreto",
     author:  "Rhonda Byrne",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958371-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -284,6 +304,8 @@ export const Books = [
     title: "Poder sin límites",
     author:  "Tony Robbins",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523395-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -292,6 +314,8 @@ export const Books = [
     title: "Mentalidad",
     author:  "Carol Dweck",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958354-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -300,6 +324,8 @@ export const Books = [
     title: "La magia del orden",
     author:  "Marie Kondo",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523311-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -308,6 +334,8 @@ export const Books = [
     title: "Despierta tu héroe",
     author:  "Victor Hugo Manzanilla",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958347-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -316,6 +344,8 @@ export const Books = [
     title: "Aprender a decir no",
     author:  "Walter Riso",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523382-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -324,6 +354,8 @@ export const Books = [
     title: "Vivir sin miedo",
     author:  "Sergio Fernández",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958308-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -332,6 +364,8 @@ export const Books = [
     title: "El código del dinero",
     author:  "Raimon Samsó",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523352-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -340,6 +374,8 @@ export const Books = [
     title: "Quién se ha llevado mi queso",
     author:  "Spencer Johnson",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523369-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -348,6 +384,8 @@ export const Books = [
     title: "El sutil arte de que no te importe",
     author:  "Mark Manson",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10523382-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   },
@@ -356,6 +394,8 @@ export const Books = [
     title: "Desarrollo personal práctico",
     author:  "Brian Tracy",
     id_category: "2",
+    publication_year: 2000,
+    price: 10,
     img_url: "https://covers.openlibrary.org/b/id/10958327-L.jpg",
     synopsis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor risus mattis, viverra orci accumsan, lacinia neque. Aenean viverra magna consectetur sagittis tempor. Nam malesuada ex fermentum sem tempus, lacinia eleifend leo viverra. Nam pharetra odio mi, vel luctus magna rhoncus ut. Cras at facilisis lacus. Aliquam erat volutpat."
   }

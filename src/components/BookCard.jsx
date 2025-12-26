@@ -1,9 +1,12 @@
-import { useState } from 'react';
+/**
+ * Creado por: Gabby Zapata
+ * Fecha: 2025-12-24
+ * Descripción: Componente que contiene la información de cada libro que se visualiza en el carrusel
+ * Despliega
+ * @returns componente BookCard
+ */
 
 export const BookCard = ({ book }) => {
-
-  
-
   return (
     <div className="card h-100 border-0 bg-transparent text-light">
       <img

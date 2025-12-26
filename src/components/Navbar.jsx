@@ -1,5 +1,14 @@
+/**
+ * Creado por: Gabby Zapata
+ * Fecha: 2025-12-24
+ * Descripción: Componente que contiene el Navbar con el logo, el nombre de la página y el menú de la aplicación
+ * Contiene el objeto nav configurado con el framework de Bootstrap
+ * @returns componente Navbar
+ */
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const Navbar = () => {
   //Estado para controlar el colapso del menú
@@ -49,7 +58,7 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="#">
-                <img src="/img/shoppincart.png" width="25" alt="Shopping-cart" />
+                <i className="bi bi-cart-fill"></i>
               </Link>
             </li>
           </ul>

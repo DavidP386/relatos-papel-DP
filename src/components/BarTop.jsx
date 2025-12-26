@@ -1,3 +1,11 @@
+/**
+ * Creado por: Gabby Zapata
+ * Fecha: 2025-12-24
+ * Descripción: Componente que se coloca debajo del Navbar en el Home. Permitirá acceder a las recomendaciones personalizadas y a la comunidad.
+ * Despliega una fila (row) con dos columnas (col)
+ * @returns componente BarTop
+ */
+
 export const BarTop = () => {
   return (
     <div className="row barra gx-0 w-100">

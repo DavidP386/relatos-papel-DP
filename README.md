@@ -12,7 +12,7 @@ Relatos de Papel es una plataforma de transformación digital diseñada para ada
 
 # Arquitectura del Sistema 🏗️
 
-El proyecto está diseñado bajo una arquitectura de **microservicios**, lo que permite una alta escalabilidad para soportar hasta **10,000 usuarios concurrentes**[cite: 48].
+El proyecto está diseñado bajo una arquitectura de **microservicios**, lo que permite una alta escalabilidad para soportar hasta **10,000 usuarios concurrentes**.
 
 - **Frontend:** Desarrollado con **React + Vite**, enfocado en una interfaz intuitiva, limpia y accesible.
 - **Backend:** Construido con **Java 17+** y **Spring Boot**, utilizando el ecosistema de **Spring Cloud** para la gestión de servicios.

@@ -1,3 +1,11 @@
+/**
+ * Creado por: Gabby Zapata
+ * Fecha: 2025-12-24
+ * Descripción: Componente que se coloca debajo del Navbar en la página de búsqueda, donde se colocan los campos para la búsqueda de libros.
+ * Despliega un contenedor con fondo negro, dentro tiene una fila (row) con 3 columnas (col), en cada columna se despliega un campo
+ * @returns componente BarTopSearc
+ */
+
 export const BarTopSearch = () => {
   return (
     <div class="barra back-black">

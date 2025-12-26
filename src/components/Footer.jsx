@@ -1,4 +1,9 @@
-import React, { PureComponent } from 'react';
+/**
+ * Creado por: Gabby Zapata
+ * Fecha: 2025-12-24
+ * Descripción: Componente que contiene el pie de la página
+ * @returns componente Footer
+ */
 
 export const Footer = () => {
   return (

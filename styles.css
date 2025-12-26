@@ -84,9 +84,9 @@ footer {
 /*Estilo para el swiper del carrusel */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff !important;
+  color: #000000 !important;
   /* Blanco puro */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255);
   /* Fondo semi-transparente */
   width: 50px !important;
   /* Ancho del área del botón */
@@ -95,25 +95,33 @@ footer {
   top: 40% !important;
   /* Centrado vertical respecto a la imagen */
   border-radius: 4px;
-  transition: all 0.3s ease;
-  opacity: 0;
+  transition: background-color 0.2s ease;
+  opacity: 1;
   z-index: 10;
 }
 
 /* El símbolo de la flecha */
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 15px !important;
+  font-size: 30px !important;
   /* Tamaño de la flecha */
   font-weight: bold;
   color: white;
 }
 
+/* 2. Posicionamiento en los extremos absolutos */
+.swiper-button-prev {
+  left: 5px !important; /* Pegada al borde izquierdo */
+}
+
+.swiper-button-next {
+  right: 5px !important; /* Pegada al borde derecho */
+}
+
 /* Hover en el botón mismo */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.1);
+  background-color: rgba(255, 255, 255);
 }
 
 /* Mostrar botones al pasar el mouse sobre el carrusel */
