@@ -47,8 +47,8 @@ export const Carrousel = ({ categories }) => {
         // -------------------------------------------------------
 
         return (
-          <div key={cat.id_category} className="mb-5">
-            <h4 className="mb-4 fw-bold">{cat.name_category}</h4>
+          <div key={cat.id_category} className="mb-2">
+            <h5 className="mb-2 fw-bold">{cat.name_category}</h5>
 
             <Swiper
               modules={[Navigation]}

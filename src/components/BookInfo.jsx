@@ -12,7 +12,10 @@ import { Categories, BooksPerCategory } from "../data/Data";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const BookInfo = ({ book }) => {
+  //State para inicializar la modalidad
   const [modalidad, setModalidad] = useState("");
+  //State para inicializar la cantidad
+  const [cantidad, setCantidad] = useState(1);
   //Se coloca el navigate para ir hacia atrás
   const navigate = useNavigate();
   //Estos filtros son para extraer todas las categorías a las que pertenece el libro para imprimirlas
@@ -33,7 +36,7 @@ export const BookInfo = ({ book }) => {
       <div className="col-6 p-4 rounded-border back-gray text-dark">
         <div className='mb-4'>
           <a href="#" onClick={() => navigate(-1)}>
-            <i class="bi bi-skip-backward-fill"></i>
+            <i className="bi bi-skip-backward-fill"></i>
             &nbsp;&nbsp;Regresar
           </a>
         </div>
@@ -68,7 +71,14 @@ export const BookInfo = ({ book }) => {
             <label htmlFor="cantidad">Cantidad:</label>
           </div>
           <div className="col-lg-3">
-            <input type="number" className='field form-control text-end' name="cantidad" id="cantidad" />
+            <input 
+              type="number" 
+              className='field form-control text-end' 
+              name="cantidad" 
+              id="cantidad" 
+              value={cantidad}
+              onChange={(e)=>setCantidad(e.target)}
+            />
           </div>
         </div>
         <div className='row container-fluid align-items-center mt-2'>
