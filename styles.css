@@ -75,8 +75,8 @@ a {
 
 .button-blue {
   background-color: var(--secundary-color);
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 5px;
+  padding: 4px;
   border: none;
   font-size: 14px;
   color: black;

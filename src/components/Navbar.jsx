@@ -27,11 +27,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
+        {/*TODO: Añadir un CSS para la imagen, para el tamaño y debemos revisar que el alt para personas discapasitadas funcione bien*/}
         <img
           src="/img/logo.png"
-          alt="Logo"
+          alt="Logo Relatos de Papel"
           width="50"
-          className="d-inline-block align-text-top me-2"
+          className="d-inline-block align-text-top me-2 text-dark"
         />
         <Link className="navbar-brand" to="/">Librería Relatos de Papel</Link>
         
@@ -49,12 +50,14 @@ export const Navbar = () => {
 
         {/* Contenedor colapsable: manejamos la clase 'show' condicionalmente */}
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
+          <input class="field" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="button-blue" type="submit">Search</button>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className={activeMenu === 'INI' ? "nav-link active" : "nav-link"} to="/" onClick={() => handleMenu(true, 'INI')}>Inicio</Link>
             </li>
             <li className="nav-item">
-              <Link className={activeMenu === 'BUS' ? "nav-link active" : "nav-link"} to="/search" onClick={() => handleMenu(true, 'BUS')}>Búsqueda</Link>
+              <Link className={activeMenu === 'BUS' ? "nav-link active" : "nav-link"} to="/search" onClick={() => handleMenu(true, 'BUS')}>Categorías</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="#">
