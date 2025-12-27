@@ -24,6 +24,7 @@ footer {
   border-top: black 2px solid;
 }
 
+/*Se quita la decoración de los links*/
 a {
   color: black;
   text-decoration: none;
@@ -62,7 +63,7 @@ a {
   font-size: 14px;
   border-radius: 3px;
   padding: 4px 0px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   display: block;
   box-sizing: border-box;
 }
@@ -81,25 +82,14 @@ a {
   color: black;
 }
 
-/*Estilos para el carrusel*/
-/* Color de las flechas */
-/* Contenedor principal de las flechas */
-
-/*Estilo para el dondo más claro del carrusel */
-
-/*Estilo para el swiper del carrusel */
+/*Estilos para el carrusel y para el swiper del carrusel */
 .swiper-button-next,
 .swiper-button-prev {
   color: #000000 !important;
-  /* Blanco puro */
   background-color: rgba(255, 255, 255);
-  /* Fondo semi-transparente */
-  width: 50px !important;
-  /* Ancho del área del botón */
-  height: 80px !important;
-  /* Más alto */
-  top: 40% !important;
-  /* Centrado vertical respecto a la imagen */
+  width: 50px !important; /* Ancho del área del botón */
+  height: 80px !important; /* Más alto */
+  top: 40% !important; /* Centrado vertical respecto a la imagen */
   border-radius: 4px;
   transition: background-color 0.2s ease;
   opacity: 1;
@@ -109,8 +99,7 @@ a {
 /* El símbolo de la flecha */
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 30px !important;
-  /* Tamaño de la flecha */
+  font-size: 30px !important; /* Tamaño de la flecha */
   font-weight: bold;
   color: white;
 }
