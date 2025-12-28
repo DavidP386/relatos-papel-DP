@@ -39,10 +39,10 @@ export const Navbar = () => {
   };
 
   return (
-    <RBNavbar expand="lg" className="bg-body-tertiary">
+    <RBNavbar expand="lg" className="custom-navbar bg-body-tertiary">
       <Container fluid>
         {/* Logo y Nombre */}
-        <RBNavbar.Brand as={Link} to="/" className="d-flex align-items-center">
+        <RBNavbar.Brand as={Link} to="/" className="d-flex align-items-center text-light">
           <img
             src="/img/logo.png"
             alt="Logo Relatos de Papel"
@@ -94,6 +94,7 @@ export const Navbar = () => {
                 <NavDropdown.Item 
                   key={index} 
                   as={Link} 
+                  className='small'
                   to={`/category/${item.id_category}`}
                 >
                   {item.name_category}

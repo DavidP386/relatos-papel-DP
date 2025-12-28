@@ -9,6 +9,7 @@ export * from './Home';
 export * from './Search';
 export * from './BookPage';
 export * from './ShoppingCartPage';
+export * from './CategoriesPage';
 export * from './PaymentMethodPage';
 export * from './CreditCardPage';
 export * from './OrderConfirmationPage';

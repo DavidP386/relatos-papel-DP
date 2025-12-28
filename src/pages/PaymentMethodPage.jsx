@@ -8,6 +8,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { UserForm } from '../components/Components';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const PaymentMethodPage = () => {
@@ -191,6 +192,8 @@ export const PaymentMethodPage = () => {
                      <i className="bi bi-arrow-left"></i> Volver al carrito
                    </a>
                 </div>
+                {/*Formulario para ingreso de datos*/}
+                <UserForm />    
                 {/*Resumen del pedido.*/}
                 <div className="mb-4 p-3 bg-white rounded">
                    <h5>Resumen del pedido</h5>

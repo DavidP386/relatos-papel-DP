@@ -1,9 +1,10 @@
 /*Colores base de la aplicación*/
 :root {
-  --primary-color: #A1B7AF;
-  --secundary-color: #80B6D8;
-  --third-color: #C2CFCB;
+  --primary-color: #ffffff;
+  --secundary-color: #479fd6;
+  --third-color: #f1f1f1;
   --back-color: #212425;
+  --bar-color: #5987a3;
 }
 
 /*Parametrización de estilos del body*/
@@ -28,6 +29,21 @@ footer {
 a {
   color: black;
   text-decoration: none;
+}
+
+/* Cambiar el fondo del navbar */
+.custom-navbar {
+  background-color: var(--bar-color) !important;
+}
+
+/* Cambiar el color de los links */
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+/* Color al pasar el mouse */
+.custom-navbar .nav-link:hover {
+  color: black !important;
 }
 
 /*Estilos para la barra del home*/
@@ -77,7 +93,7 @@ a {
   background-color: var(--secundary-color);
   border-radius: 5px;
   padding: 4px;
-  border: none;
+  border: solid 1px var(--back-color);
   font-size: 14px;
   color: black;
 }

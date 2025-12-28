@@ -8,7 +8,7 @@
  */
 
 import { Routes, Route } from 'react-router-dom';
-import { Home, Search, BookPage, ShoppingCartPage, PaymentMethodPage, CreditCardPage, OrderConfirmationPage } from './Pages';
+import { Home, Search, BookPage, ShoppingCartPage, PaymentMethodPage, CreditCardPage, OrderConfirmationPage, CategoriesPage } from './Pages';
 import { Navbar, Footer } from '../components/Components';
 
 export const Viewport = () => {
@@ -21,6 +21,7 @@ export const Viewport = () => {
           <Route path="/" element={<Home categories={[3,4,5]} />} />
           <Route path="/search" element={<Search />} />
           <Route path="/book/:id" element={<BookPage />} />
+          <Route path="/category/:id" element={<CategoriesPage />} />
           <Route path="/shopping" element={<ShoppingCartPage />} />
           <Route path="/payment-method" element={<PaymentMethodPage />} />
           <Route path="/credit-card-payment" element={<CreditCardPage />} />
