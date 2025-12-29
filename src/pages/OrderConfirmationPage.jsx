@@ -61,10 +61,7 @@ export const OrderConfirmationPage = () => {
           <div className="back-gray rounded-border p-4 text-center text-black">
             {/* Icono de éxito */}
             <div className="mb-4">
-              <i
-                className="bi bi-check-circle-fill"
-                style={{ fontSize: '5rem', color: '#28a745' }}
-              ></i>
+              <i className="bi bi-check-circle-fill success-icon"></i>
             </div>
             
             {/*Mensaje de confirmación.*/}
@@ -76,7 +73,7 @@ export const OrderConfirmationPage = () => {
             {/*Número de orden.*/}
             <div className="bg-white rounded p-3 mb-4">
               <h5 className="mb-2">Número de orden</h5>
-              <h3 style={{ color: '#80B6D8' }}>{orderNumber}</h3>
+              <h3 className="order-number-text">{orderNumber}</h3>
               <small className="text-muted">Guarda este número para seguimiento</small>
             </div>
             
@@ -103,8 +100,7 @@ export const OrderConfirmationPage = () => {
                       <img
                         src={item.img_url}
                         alt={item.title}
-                        style={{ width: '50px', height: '70px', objectFit: 'cover' }}
-                        className="me-3 rounded"
+                        className="me-3 rounded order-product-image"
                       />
                       <div>
                         <div className="fw-bold">{item.title}</div>
@@ -133,7 +129,7 @@ export const OrderConfirmationPage = () => {
                 <hr />
                 <div className="d-flex justify-content-between">
                   <strong>Total pagado:</strong>
-                  <strong style={{ fontSize: '1.3rem', color: '#80B6D8' }}>
+                  <strong className="order-total-price">
                     ${orderData.total.toFixed(2)}
                   </strong>
                 </div>

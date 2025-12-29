@@ -38,12 +38,12 @@ export const CreditCardPage = () => {
   const detectCardType = (number) => {
     const cleanNumber = number.replace(/\s/g, '');
 
-    // Visa: comienza con 4
+    //Visa: comienza con 4
     if (/^4/.test(cleanNumber)) return 'visa';
 
-    // Mastercard: comienza con 51-55 o 2221-2720
+    //Mastercard: comienza con 51-55 o 2221-2720
     if (/^5[1-5]/.test(cleanNumber) || /^2(22[1-9]|2[3-9][0-9]|[3-6][0-9]{2}|7[0-1][0-9]|720)/.test(cleanNumber)) {
-      return 'mastercard';
+       return 'mastercard';
     }
 
     // American Express: comienza con 34 o 37
