@@ -1,7 +1,7 @@
 /**
  * Creado por: Gabby Zapata
- * Modificado por: Hernan Nuñez
- * Fecha: 2025-12-27
+ * Modificado por: Maria Parraga, David Paez
+ * Fecha: 2025-12-29
  * Descripción: Componente que contiene la vista de toda la aplicación y el manejo de rutas que renderiza solo la parte central
  * Contiene el Navbar, el Main que es el que se renderiza con las rutas y el Footer
  * @returns componente Viewport

@@ -1,7 +1,7 @@
 /**
  * Creado por: Gabby Zapata
- * Modificado por: Hernan Nuñez
- * Fecha: 2025-12-27
+ * Modificado por: Maria Parraga, David Paez
+ * Fecha: 2025-12-29
  * Descripción: Componente que contiene el Navbar con el logo, el nombre de la página y el menú de la aplicación
  * Contiene el objeto nav configurado con el framework de Bootstrap
  * @returns componente Navbar
@@ -56,9 +56,7 @@ export const Navbar = () => {
         <RBNavbar.Toggle aria-controls="navbarSupportedContent" />
 
         {/* Contenedor colapsable */}
-        <RBNavbar.Collapse id="navbarSupportedContent">
-                  
-          
+        <RBNavbar.Collapse id="navbarSupportedContent">   
          
           <Form className="me-auto w-auto" onSubmit={handleSearch}>
             <div className="position-relative">
@@ -81,7 +79,6 @@ export const Navbar = () => {
               </button>
             </div>
           </Form>
-
 
           <Nav className="ms-auto">
             {/* Inicio con 'as={Link}' para mantener la navegación de react-router */}
