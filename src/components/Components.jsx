@@ -10,5 +10,6 @@ export * from './Carrousel';
 export * from './BarTop';
 export * from './BarTopSearch';
 export * from './BookInfo';
+export * from './BookForm';
 export * from './CartItem';
 export * from './UserForm';

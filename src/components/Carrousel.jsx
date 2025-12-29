@@ -7,8 +7,7 @@
  * @returns componente Carrousel
  */
 
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { BookCard } from './BookCard';
@@ -20,20 +19,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export const Carrousel = ({ categories }) => {
-
-  const [clickedBook, setClickedBook] = useState(null);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (clickedBook !== null) {
-      navigate(`/book/${clickedBook}`);
-    }
-  }, [clickedBook, navigate]);
-
   const categoriesFiltered = Categories.filter(cat => categories.includes(cat.id_category));
 
   return (
-    <div className="container-fluid text-dark py-5 min-vh-100">
+    <div className="container-fluid text-dark py-5">
       {categoriesFiltered.map((cat) => {
 
         // --- LÓGICA DE FILTRADO PARA ESTA CATEGORÍA ESPECÍFICA ---
@@ -64,7 +53,6 @@ export const Carrousel = ({ categories }) => {
             >
               {booksToShow.map((book) => (
                 <SwiperSlide
-                  onClick={() => setClickedBook(book.id_book)}
                   key={book.id_book} // Mejor usar el id del libro que el index
                 >
                   <BookCard book={book} />
