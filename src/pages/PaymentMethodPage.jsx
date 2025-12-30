@@ -17,10 +17,10 @@ import { useCart } from '../context/CartContext';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const PaymentMethodPage = () => {
+  const [showPayPalSimulation, setShowPayPalSimulation] = useState(false);
   const navigate = useNavigate();
   const { cartItems, getSubtotal } = useCart();
   const [selectedMethod, setSelectedMethod] = useState('');
-  const [showPayPalSimulation, setShowPayPalSimulation] = useState(false);
   const [paypalStep, setPaypalStep] = useState(1); // 1: login, 2: confirmar, 3: procesando
   const [paypalEmail, setPaypalEmail] = useState(''); // Email o teléfono para PayPal
   const [name, setName] = useState("");
