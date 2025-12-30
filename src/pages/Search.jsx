@@ -104,7 +104,7 @@ export const Search = () => {
                           type="button"
                           className="button-details w-100"
                           onClick={() => {
-                            if (!book?.id_book) return; // evita errores si no hay ID
+                            if (!book?.id_book) return; 
                             navigate(`/book/${book.id_book}`);
                           }}
                         >
