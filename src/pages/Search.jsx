@@ -100,10 +100,14 @@ export const Search = () => {
                     <p className="card-text small text-muted mb-2">{book.author}</p>
                     <div className="mt-auto">
                       <p className="card-text fw-bold mb-2">${book.price}</p>
-                      <button className="button-details w-100"
-                      onKeyDown={(e) => { if (e.key === 'Enter') navigate(`/book/${book.id_book}`); }}
-                      onClick={() => navigate(`/book/${book.id_book}`)}
-                      >
+                        <button
+                          type="button"
+                          className="button-details w-100"
+                          onClick={() => {
+                            if (!book?.id_book) return; 
+                            navigate(`/book/${book.id_book}`);
+                          }}
+                        >
                         Ver detalles
                       </button>
                     </div>
