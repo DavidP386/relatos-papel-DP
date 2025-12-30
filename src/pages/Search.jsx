@@ -102,7 +102,7 @@ export const Search = () => {
                       <p className="card-text fw-bold mb-2">${book.price}</p>
                         <button
                           type="button"
-                          className="button-details w-100"
+                          className="button-blue w-100"
                           onClick={() => {
                             if (!book?.id_book) return; 
                             navigate(`/book/${book.id_book}`);

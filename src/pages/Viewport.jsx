@@ -9,16 +9,35 @@
 
 import { Routes, Route } from 'react-router-dom';
 import { Home, Search, BookPage, ShoppingCartPage, PaymentMethodPage, CreditCardPage, OrderConfirmationPage, CategoriesPage } from './Pages';
-import { Navbar, Footer, ScrollToTop} from '../components/Components';
+import { Navbar, Footer, ScrollToTop, LayerWelcome } from '../components/Components';
+import { useState, useEffect } from 'react';
 export const Viewport = () => {
+  const [pausa, setPausa] = useState(true);
+
+  useEffect(() => {
+    // Temporizador de 5 segundos
+    const timer = setTimeout(() => {
+      setPausa(false);
+    }, 5000);
+
+    // Limpieza del temporizador
+    return () => clearTimeout(timer);
+  }, []);
+
+  //Si la pausa está activa aparece el LayerWelcome
+  if (pausa) {
+    return <LayerWelcome aparece={pausa} />;
+  }
+
+  //Cuando la pausa se desactiva aparece la página
   return (
     <>
       <Navbar />
       <ScrollToTop />
-           {/* El contenido entre Navbar y Footer cambia según la URL */}
+      {/* El contenido entre Navbar y Footer cambia según la URL */}
       <main>
         <Routes>
-          <Route path="/" element={<Home categories={[3,4,5]} />} />
+          <Route path="/" element={<Home categories={[3, 4, 5]} />} />
           <Route path="/search" element={<Search />} />
           <Route path="/book/:id" element={<BookPage />} />
           <Route path="/category/:id" element={<CategoriesPage />} />
