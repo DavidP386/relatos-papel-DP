@@ -54,6 +54,16 @@ a {
   font-weight: 600;
 }
 
+/* Tamaño letra ico shopping-cart */
+.nav-ico {
+  font-size: 1.2rem;
+}
+
+/* Tamaño letra badge */
+.nav-badge {
+  font-size: 0.6rem;
+}
+
 /*Estilos para la barra del home*/
 .barra {
   height: 7rem;

@@ -17,7 +17,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar as RBNavbar, Nav, NavDropdown, Container, Form, Button, Badge } from 'react-bootstrap';
 
 export const Navbar = () => {
-  // Solo necesitamos el estado para el menú activo
   const [activeMenu, setActiveMenu] = useState('INI');
   // Estado para el texto de búsqueda
   const [searchQuery, setSearchQuery] = useState('');
@@ -42,14 +41,14 @@ export const Navbar = () => {
     <RBNavbar expand="lg" className="custom-navbar bg-body-tertiary">
       <Container fluid>
         {/* 1. Logo y Nombre */}
-        <RBNavbar.Brand as={Link} to="/" className="d-flex align-items-center text-light">
+        <RBNavbar.Brand as={Link} to="/" className="d-flex align-items-center text-light fs-6 fs-md-4">
           <img
             src="/relatos/img/logo.png"
             alt="Logo"
             width="50"
             className="d-inline-block align-text-top me-2"
           />
-          Librería Relatos de Papel
+          <span className="d-inline-block">Librería Relatos de Papel</span>
         </RBNavbar.Brand>
 
         {/* CONTENEDOR DE ICONOS PARA MÓVIL (Orden visual) */}
@@ -61,13 +60,12 @@ export const Navbar = () => {
             onClick={() => setActiveMenu('CAR')}
             className="position-relative text-light me-3"
           >
-            <i className="bi bi-cart-fill" style={{ fontSize: '1.5rem' }}></i>
+            <i className="bi bi-cart-fill nav-ico"></i>
             {totalItems > 0 && (
               <Badge
                 bg="danger"
                 pill
-                className="position-absolute top-0 start-100 translate-middle"
-                style={{ fontSize: '0.7rem' }}
+                className="position-absolute top-0 start-100 translate-middle nav-badge"
               >
                 {totalItems}
               </Badge>
@@ -78,7 +76,7 @@ export const Navbar = () => {
           <RBNavbar.Toggle aria-controls="navbarSupportedContent" />
         </div>
 
-        {/* 4. Contenedor colapsable (Solo lo que quieres que se oculte) */}
+        {/* 4. Contenedor colapsable (Solo lo que se oculta) */}
         <RBNavbar.Collapse id="navbarSupportedContent">
           <Form className="me-auto mt-2 mt-lg-0" onSubmit={handleSearch}>
             <div className="position-relative">
@@ -107,7 +105,7 @@ export const Navbar = () => {
               Inicio
             </Nav.Link>
 
-            <NavDropdown title="Categorías" id="navbarDarkDropdownMenuLink" menuVariant="dark">
+            <NavDropdown title="Categorías"  active={activeMenu === 'CAT'} id="navbarDarkDropdownMenuLink" menuVariant="dark"  onClick={() => setActiveMenu('CAT')}>
               {Categories.map((item, index) => (
                 <NavDropdown.Item className='small' key={index} as={Link} to={`/category/${item.id_category}`}>
                   {item.name_category}
